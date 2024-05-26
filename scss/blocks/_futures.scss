@@ -1,0 +1,104 @@
+.futures{
+    width: 100%;
+    &__wrapper{
+        width: 100%;
+        padding: 50px 20px;
+        margin-top: 20px;
+        @include df(space-between, center);
+    }   
+    &__content{
+        width: 35%;
+        height:auto;
+    }
+    &__content__title{
+        font-size: 35px;
+        font-weight: 500;
+        line-height: 45px;
+        color: $bg-stext;
+    }
+    &__content__text{
+        font-size: 16px;
+        font-weight: 400;
+        line-height: 30px;
+        color: $bg-text;
+        margin-top: 20px;
+    }
+    &__btn__item{
+        @include btn();
+    }
+}
+@media (max-width:773px){
+    .futures{
+        width: 100%;
+        &__wrapper{
+            width: 100%;
+            padding: 50px 20px;
+            margin-top: 20px;
+            @include df(space-between, center);
+        }
+        &__content{
+            width: 35%;
+            height:auto;
+        }
+        &__content__title{
+            font-family: Rubik;
+            font-size: 25px;
+            font-weight: 300;
+            line-height: 35px;
+            color: $bg-stext
+        }
+        &__content__text{
+            font-family: Rubik;
+            font-size: 16px;
+            font-weight: 400;
+            line-height: 30px;
+            color: $bg-text;
+            margin-top: 20px;
+        }
+        &__btn{
+        width: 270px;
+        height: 116px;
+        @include df(flex-end, center);
+        }
+        &__btn__item{
+            @include btn(10px 57px);
+        }
+    }
+}
+@media (max-width:600px){
+    .futures{
+        width: 100%;
+        &__wrapper{
+            width: 100%;
+            padding: 50px 20px;
+            margin-top: 20px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            @include dfc(none, center);
+        }
+        &__content{
+            width: 35%;
+            height:auto;
+            text-align: center;
+        }
+        &__content__title{
+            font-family: Rubik;
+            font-size: 17px;
+            font-weight: 200;
+            line-height: 25px;
+            color: $bg-stext;
+        }
+        &__content__text{
+            font-family: Rubik;
+            font-size: 13px;
+            font-weight: 400;
+            line-height: 20px;
+            color: $bg-text;
+            margin-top: 10px;
+        }
+        &__btn__item{
+            @include btn(7px 27px);
+        }        
+    }
+}
